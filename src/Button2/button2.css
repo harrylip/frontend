@@ -1,0 +1,35 @@
+.main{
+    background-image: url('./../Img/cool(3).png');
+    height: 900px;
+}
+.zh{
+    float: left;
+    margin-top:100px; 
+    margin-left:730px; 
+    height: 580px;
+    width: 500px;
+    border-radius: 20px ; 
+    border: 1.5px solid black;
+}
+.Ava{
+    float: left;
+    margin-left:160px;
+    margin-top:50px;
+}
+.di{
+    float:left;
+    margin-left:120px;
+    margin-top:20px;
+    font-size: 50px ;
+}
+.bu{
+    color: white;
+    float: left;
+    margin-left:100px;
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+    background-color:black;
+    font-size: 65px;
+    border: 1px solid black;
+}

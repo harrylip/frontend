@@ -1,0 +1,82 @@
+.main{
+    background-color: rgb(244, 239, 232);
+    height: 750px;
+}
+.top3{
+    float: right;
+}
+.top2{
+    float: left;
+    margin-left: 60px;
+}
+.top{
+    font-size: 35px;
+    background-color: rgb(244, 239, 232);
+    height: 140px;
+    line-height: 140px;
+}
+.bu1{
+    color: black;
+    margin-left: 40px;
+}
+.font{
+    float: left;
+    margin-left: 500px;
+    margin-top:200px ;
+    font-size: 60px;
+    color: black;
+}
+.title1{
+    font-size: 85px;
+    float: left;
+    margin-top: 90px;
+    margin-left: 30px;
+}
+.title2{
+    font-size: 80px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.ph2{
+    float: right;
+    margin-top: 40px;
+}
+.img{
+    /* font-style:oblique; */
+    text-shadow: 2px 5px #a3d668;
+    color: #355f04;
+    height: 600px;
+    width: 70%;
+    float: right;
+    margin-top: 10px;
+}
+.form {
+    font-size: 35px;
+    float: left;
+    height: 500px;
+    width: 22%;
+    padding-top: 50px;
+    align-content: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-left:40px;
+    border-radius: 20px ; 
+    border: 1.2px solid black;
+    background:url('./../Img/login.png');
+    background-size:cover;
+}
+.item{
+    float: left;
+    width: 350px;
+    height: 100px;
+}
+.input{
+    width: 300px;
+    height: 50px;
+}
+.button {
+    width: 300px;
+    height: 50px;
+    float: left;
+}

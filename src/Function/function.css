@@ -1,0 +1,42 @@
+.main{
+    background-image: url('./../Img/cool(3).png');
+    height: 900px;
+}
+.top{
+    text-align: left;
+    height: 120px;
+    color: rgb(217, 232, 233);
+    font-size: 70px;
+    background-color: black;
+}
+.in{
+    float: left;
+    margin-top: 50px;
+    font-size: 20px;
+    height: 60px;
+}
+.ku{
+    float: left;
+    margin-left: 680px;
+    margin-top: 100px;
+    height: 680px;
+    width: 560px;
+    border-radius: 20px ; 
+    border: 1.5px solid black;
+}
+.form {
+    margin-top:60px; 
+    margin-left:45px; 
+    height: 600px;
+    width: 470px;
+}
+.button {
+    float: left;
+    margin-left:35px;
+    margin-top: 70px; 
+    width: 400px;
+    height: 100px;
+    font-size: 60px;
+    background-color:black;
+    border: 1px solid black;
+}

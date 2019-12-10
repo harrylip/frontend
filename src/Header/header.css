@@ -1,0 +1,13 @@
+.main{
+    background-color: rgb(44, 35, 35);
+    border-bottom: 1px solid rgb(44, 35, 35);
+}
+.user{
+    margin: 25px 130px 0 50px;
+    float: right;
+}
+.dl{
+    float:right;
+    margin-top:40px; 
+    font-size: 30px;
+}
