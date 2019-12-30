@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './../Header/header'
 import Footer from './../Footer/footer'
-import Map from './../Map/map'
+import Information from './../Information/information'
+import { Button } from 'antd';
 
 var HomePageCss = require('./homepage.css')
 export default class HomePage extends React.Component{
@@ -11,7 +12,7 @@ export default class HomePage extends React.Component{
                 <Header/>
                 <div className={HomePageCss.ju}>
                     <Footer/>
-                    <Map/>
+                    <Information/>
                 </div>
             </div>
         )

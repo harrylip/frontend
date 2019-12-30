@@ -1,10 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import { Menu, Icon,Carousel,Tooltip } from 'antd';
+import {Menu,Icon,Tooltip,Tabs} from 'antd';
 const { SubMenu } = Menu;
+const { TabPane } = Tabs;
+function callback(key) {
+    console.log(key);
+  }
 
-var FooterCss = require('./footer.css')
-export default class Footer extends React.Component{
+var StoreCss = require('./store.css')
+export default class HomePage extends React.Component{
     state = {
         current: 'mail',
       };
@@ -17,17 +21,22 @@ export default class Footer extends React.Component{
       };
     render(){
         return(
-            <div className={FooterCss.main}>
-                <div className={FooterCss.mid}>
-               <Menu className={FooterCss.menu} onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
-                    <Menu.Item key="1">
+            <div className={StoreCss.main}>
+                <div className={StoreCss.top}>
+                    <div className={StoreCss.top2}><Icon type="flag" />茶的分类</div>
+                </div>
+                <div className={StoreCss.mid}>
+               <Menu className={StoreCss.menu} onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
+               <Menu.Item key="1">
                         <Link to="/action"><Icon type="fire" />精彩活动</Link>
                     </Menu.Item>
                     <SubMenu
                         title={
+                            <Tooltip title="不可操作">
                             <Link to="/class">
                             <Icon type="flag" />茶的分类
                             </Link>
+                            </Tooltip>
                         }
                         >
                         <Menu.ItemGroup title="分类">
@@ -39,11 +48,12 @@ export default class Footer extends React.Component{
                                 <Menu.Item key="setting:6">台湾奶茶</Menu.Item>
                         </Menu.ItemGroup>
                     </SubMenu>
-                    <SubMenu
+                    <SubMenu 
                         title={
-                            <Link to="/Store">
-                            <Icon type="shop" />店铺
-                            </Link>
+                            <a href="https://unsplash.com/s/photos/tea" target="_blank" rel="noopener noreferrer">
+                            <Icon type="shop" />
+                            商铺
+                            </a>
                         }
                         >
                         <Menu.ItemGroup title="茶">
@@ -90,19 +100,28 @@ export default class Footer extends React.Component{
                     </Menu.Item>
                 </Menu> 
                 </div>
-                <div className={FooterCss.td}>
-                    <Carousel autoplay className={FooterCss.td2}>
-                    <div>
-                        <h3><img src="banner1.png" width="100%" height="300px"></img></h3>
-                    </div>
-                    <div>
-                        <h3><img src="banner2.png" width="100%" height="300px"></img></h3>
-                    </div>
-                    <div>
-                        <h3><img src="banner3.png" width="100%" height="300px"></img></h3>
-                    </div>
-                    </Carousel>
-                    <div className={FooterCss.td3}>欢迎来到景轩<br/></div>
+                <div>
+                <Tabs defaultActiveKey="1" onChange={callback}>
+                    <TabPane tab="茶" key="1">
+                        <div className={StoreCss.a1}>
+                            
+                        </div>
+                        <div className={StoreCss.a1}>
+                            
+                        </div>
+                    </TabPane>
+                    <TabPane tab="茶具" key="2">
+                        <div className={StoreCss.a1}>
+                            
+                        </div>
+                    </TabPane>
+                    <TabPane tab="茶点" key="3">
+                        <div className={StoreCss.a1}>
+                            
+                        </div>
+                    </TabPane>
+                    
+                </Tabs>
                 </div>
             </div>
         )

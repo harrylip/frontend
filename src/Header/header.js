@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import {Avatar} from 'antd'
+import {Avatar,Carousel} from 'antd'
 var HeaderCss = require('./header.css')
 
 export default class Header extends React.Component{
@@ -18,10 +18,14 @@ export default class Header extends React.Component{
 
         return(
             <div className={HeaderCss.main}>
-                <img src="lo1.gif" width="230px" height="160px"></img>
-                <div className={HeaderCss.user}>
-                    <Avatar icon="user" size={110}></Avatar>
-                    {userProfile}
+                <div className={HeaderCss.top}>
+                    <img className={HeaderCss.top2} src="logo3.png" width="210px" height="100px"></img>
+                    <Link to="/guan" className={HeaderCss.bu1}>关于景轩</Link>
+                    <Link to="/intro" className={HeaderCss.bu1}>联系我们</Link>
+                    <div className={HeaderCss.user}>
+                        <Avatar icon="user" size={70}></Avatar>
+                        {userProfile}
+                    </div>
                 </div>
             </div>
         )

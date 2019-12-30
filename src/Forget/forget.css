@@ -1,0 +1,38 @@
+.main{
+    background-color: rgb(236, 221, 201);
+    height: 750px;
+}
+.top3{
+    float: right;
+}
+.top2{
+    float: left;
+    margin-left: 60px;
+}
+.top{
+    font-size: 35px;
+    background-color: rgb(244, 239, 232);
+    height: 140px;
+    line-height: 140px;
+}
+.mid{
+    background-color: rgb(244, 239, 232);
+    text-align: center;
+    line-height: 120px;
+    height: 150px;
+    font-size: 70px;
+}
+.func{
+    margin-top: 5%;
+    margin-left: 40%;
+    height: 300px;
+    width: 20%;
+    text-align: center;
+}
+.func2{
+    margin-bottom: 15%;
+    height: 15%;
+}
+.func3{
+    width: 100px;
+}

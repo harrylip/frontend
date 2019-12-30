@@ -4,10 +4,8 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import HomePage from './HomePage/homepage';
 import Footer from './Footer/footer';
-import Function from './Function/function';
 import FunBu from './FunBu/button'
 import Button2 from './Button2/button2'
-import Map from './Map/map'
 import Person from './Person/person'
 import Login0 from './Login0/login0'
 import Order from './Order/order'
@@ -16,6 +14,11 @@ import Opinion from './Opinion/opinion'
 import Contribute from './Contribute/contribute'
 import Intro from './Intro/intro'
 import Guan from './Guan/guan'
+import Forget from './Forget/forget'
+import Information from './Information/information'
+import Action from './Action/action'
+import Class from './Class/class'
+import Store from './Store/store'
 import {BrowserRouter,Route, Switch,Redirect,withRouter} from 'react-router-dom';
 
 class IndexPage extends React.Component{
@@ -26,8 +29,6 @@ class IndexPage extends React.Component{
                     <Switch>
                         <Route path="/" exact component={Login0}></Route>
                         <Route path="/homepage" component={HomePage}></Route>
-                        <Route path="/map" component={Map}></Route>
-                        <Route path="/function" component={Function}></Route>
                         <Route path="/button" component={FunBu}></Route>
                         <Route path="/button2" component={Button2}></Route>
                         <Route path="/footer" component={Footer}></Route>
@@ -39,6 +40,11 @@ class IndexPage extends React.Component{
                         <Route path="/opinion" component={Opinion}></Route>
                         <Route path="/intro" component={Intro}></Route>
                         <Route path="/guan" component={Guan}></Route>
+                        <Route path="/forget" component={Forget}></Route>
+                        <Route path="/information" component={Information}></Route>
+                        <Route path="/action" component={Action}></Route>
+                        <Route path="/class" component={Class}></Route>
+                        <Route path="/store" component={Store}></Route>
                         <Redirect to="login0"></Redirect>
                     </Switch>
                 </BrowserRouter>

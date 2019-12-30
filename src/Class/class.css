@@ -1,0 +1,43 @@
+.main{
+    height: 1850px;
+    background-color: blanchedalmond;
+}
+.top{
+    color: rgb(85, 82, 75);
+    font-size: 40px;
+    line-height: 70px;
+    height: 70px;
+    background-color: rgb(235, 203, 157);
+}
+.top2{
+    float: left;
+    margin-left: 30px;
+}
+.mid{
+    background-color: blanchedalmond;
+}
+.menu{
+    text-align: center;
+    width: 90%;
+    background-color: blanchedalmond;
+}
+.a1{
+    height: 410px;
+}
+.p1{
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.a11{
+    float: left;
+    margin-left: 5%;
+    margin-top: 50px;
+    font-size: 60px;
+}
+.a12{
+    float: left;
+    margin-left: 40%;
+    margin-top: -12%;
+    font-size: 20px;
+}

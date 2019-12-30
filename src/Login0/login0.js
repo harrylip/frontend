@@ -66,7 +66,7 @@ function hasErrors(fieldsError) {
                     <div className={Login0Css.img}>
                         <div className={Login0Css.title1}>致力于打造互联网</div>
                         <div className={Login0Css.title2}>茶文化优质社区</div>
-                        <img  className={Login0Css.ph2} src="photo2.png" width="360px" height="340px"></img>
+                        <img  className={Login0Css.ph2} src="ph2.png" width="360px" height="340px"></img>
                     </div>
                     <Form layout="inline" onSubmit={this.handleSubmit} className={Login0Css.form}>
                         登录
@@ -80,7 +80,7 @@ function hasErrors(fieldsError) {
                         </Form.Item>
                         <Form.Item className={Login0Css.item}>
                         {getFieldDecorator('remember', {valuePropName: 'checked', initialValue: true,})(<Checkbox>记住密码</Checkbox>)}
-                        <Link to="/register">忘记密码</Link> Or <Link to="/register">注册</Link>
+                        <Link to="/forget">忘记密码</Link> Or <Link to="/register">注册</Link>
                         </Form.Item>
                         <Form.Item className={Login0Css.item}> 
                                 <Button onClick={this.homepage} value="登录" type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())} className={Login0Css.button}>

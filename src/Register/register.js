@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {  Form, Input, Tooltip,   Icon,     Select,   Checkbox,  Button, AutoComplete,Popconfirm, message
+import {  Form, Input, Select,   Checkbox,  Button, AutoComplete,Popconfirm, message
   } from 'antd';
 var RegisterCss =require('./register.css')
 const { Option } = Select;
@@ -28,7 +28,6 @@ var RegisterCss =require('./register.css')
         autoCompleteResult: [],
       };
       
-
       handleSubmit = e => {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {
@@ -101,7 +100,7 @@ var RegisterCss =require('./register.css')
         const websiteOptions = autoCompleteResult.map(website => (
           <AutoCompleteOption key={website}>{website}</AutoCompleteOption>
         ));
-    
+          
         return(
             <div className={RegisterCss.background}>
                 <div  className={RegisterCss.kuang}>

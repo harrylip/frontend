@@ -1,0 +1,28 @@
+.main{
+    height: 1270px;
+    background-color: blanchedalmond;
+}
+.top{
+    color: rgb(85, 82, 75);
+    font-size: 40px;
+    line-height: 70px;
+    height: 70px;
+    background-color: rgb(235, 203, 157);
+}
+.top2{
+    float: left;
+    margin-left: 30px;
+}
+.mid{
+    background-color: blanchedalmond;
+}
+.menu{
+    text-align: center;
+    width: 90%;
+    background-color: blanchedalmond;
+}
+.ph{
+    float: left;
+    margin-top: 40px;
+    margin-left: 20%;
+}

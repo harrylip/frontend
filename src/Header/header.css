@@ -1,13 +1,22 @@
-.main{
-    background-color: rgb(44, 35, 35);
-    border-bottom: 1px solid rgb(44, 35, 35);
+.top{
+    height: 100px;
+    line-height: 100px;
+}
+.top2{
+    float: left;
+    margin-left: 60px;
+}
+.bu1{
+    font-size: 28px;
+    color: black;
+    margin-left: 40px;
 }
 .user{
-    margin: 25px 130px 0 50px;
+    margin: 0 20px 0 50px;
     float: right;
 }
 .dl{
     float:right;
-    margin-top:40px; 
+    margin-top:8px; 
     font-size: 30px;
 }
