@@ -11,25 +11,13 @@
     margin: 13% 15% 0 35%;
     text-align: center;
 }
-.form{
-    align-content: center;
-    text-align: center;
-}
-.logo{
-    float: left;
-    margin-left: 60px;
-}
-.button{
-    margin-left: 60%;
-    width: 200px;
-    height: 40px;
-}
 .logo{
     float: left;
     margin-left: 32%;
     margin-bottom: 10px;
 }
-.top1{
-    height: 130px;
-    background-color: rgba(48, 39, 39, 0.726);
+.form{
+    float: left;
+    margin-top: 10%;
+    margin-left: 25%;
 }
