@@ -55,7 +55,7 @@ export default class Login extends React.Component{
                     <div className={Login0Css.mid}>
                         <div className={Login0Css.form1}>
                             <p className={Login0Css.p}>登录</p>
-                        <div className={Login0Css.form2}>
+                          <div className={Login0Css.form2}>
                             <Form.Item>
                                 <Input type="username" name="username" value={this.state.username} onChange={e=>this.changeValue(e)}  placeholder="用户名" style={{ height: '40px' ,width:'280px'}} />
                             </Form.Item>
@@ -63,7 +63,7 @@ export default class Login extends React.Component{
                                 <Input.Password type="password" name="password" value={this.state.password} onChange={e=>this.changeValue(e)} placeholder="密码" style={{ height: '40px' ,width:'280px'}} />
                             </Form.Item>
                             <Button className={Login0Css.bu2} onClick={this.login} style={{ background:'rgb(141, 182, 230)', height: '40px' ,width:'200px',fontSize:'20px'}}>登录</Button>
-                        </div>
+                          </div>
                         </div>
                         <div className={Login0Css.title1}>致力于打造互联网</div>
                         <div className={Login0Css.title2}>茶文化优质社区</div>
