@@ -1,73 +1,26 @@
 import React from 'react'
 import {Row,Upload, Icon, message } from 'antd'
 import {Link} from 'react-router-dom'
-var PersonCss =require('./person.css')  
+var PersonCss =require('./person.css') 
 
-function getBase64(img, callback) {
-    const reader = new FileReader();
-    reader.addEventListener('load', () => callback(reader.result));
-    reader.readAsDataURL(img);
-  }
-  
-  function beforeUpload(file) {
-    const isJPG = file.type === 'image/jpeg';
-    if (!isJPG) {
-      message.error('You can only upload JPG file!');
-    }
-    const isLt2M = file.size / 1024 / 1024 < 2;
-    if (!isLt2M) {
-      message.error('Image must smaller than 2MB!');
-    }
-    return isJPG && isLt2M;
-  }
-export default class person extends React.Component{
-    
-    state = {
-        loading: false,
-      };
-    
-      handleChange = info => {
-        if (info.file.status === 'uploading') {
-          this.setState({ loading: true });
-          return;
-        }
-        if (info.file.status === 'done') {
-          // Get this url from response in real world.
-          getBase64(info.file.originFileObj, imageUrl =>
-            this.setState({
-              imageUrl,
-              loading: false,
-            }),
-          );
-        }
-      };
+export default class HomePage extends React.Component{
     render(){
-        const uploadButton = (
-            <div>
-              <Icon type={this.state.loading ? 'loading' : 'plus'} />
-              <div className="ant-upload-text">Upload</div>
-            </div>
-          );
-          const { imageUrl } = this.state;
         return(
-            <div className={PersonCss.background}>
-                <div className={PersonCss.di}>
-                    <div className={PersonCss.top}>
-                      <Icon type="user"/>Personal Page<Link to="/homepage"><Icon type="home" className={PersonCss.icon}></Icon></Link>
-                    </div>
-                    <div className={PersonCss.dan}>
-                    <Row className={PersonCss.secend} type="flex" justify="space-around" align="middle">
-                        <Link to="/order"><button className={PersonCss.button}>订单详情</button></Link>
-                    </Row>
-                    <Row className={PersonCss.third} type="flex" justify="space-around" align="middle">
-                        <Link to="/opinion"><button className={PersonCss.button}>反馈建议</button></Link>
-                    </Row>
-                    <Row className={PersonCss.third} type="flex" justify="space-around" align="middle">
-                        <Link to="/contribute"><button className={PersonCss.button}>捐赠</button></Link>
-                    </Row>
-                    </div>
+            <div className={PersonCss.main}>
+                <div className={PersonCss.top}>
+                        <img className={PersonCss.top2} src="logo.png" width="270px" height="140px"></img>
+                        <img className={PersonCss.top3} src="ph1.png" width="200px" height="140px"></img>
                 </div>
-           </div>
+                <div className={PersonCss.mid}>个人管理</div>
+                <br></br>
+                <div className={PersonCss.from}> 
+                    <Link to="/order"><button className={PersonCss.button}>订单详情</button></Link>
+                    <Link to="/address"><button className={PersonCss.button}>地址管理</button></Link>
+                    <Link to="/opinion"><button className={PersonCss.button}>反馈建议</button></Link>
+                    <Link to="/contribute"><button className={PersonCss.button}>捐赠</button></Link>
+                </div>
+                
+            </div>
         )
     }
 }

@@ -27,8 +27,8 @@ export default class HomePage extends React.Component{
                 </div>
                 <div className={ClassCss.mid}>
                <Menu className={ClassCss.menu} onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
-               <Menu.Item key="1">
-                        <Link to="/action"><Icon type="fire" />精彩活动</Link>
+               <Menu.Item key="1" >
+                        <Link to="/action"><Icon type="fire" / >精彩活动</Link>
                     </Menu.Item>
                     <SubMenu disabled
                         title={
@@ -50,10 +50,9 @@ export default class HomePage extends React.Component{
                     </SubMenu>
                     <SubMenu
                         title={
-                            <a href="https://unsplash.com/s/photos/tea" target="_blank" rel="noopener noreferrer">
-                            <Icon type="shop" />
-                            商铺
-                            </a>
+                            <Link to="/Store">
+                            <Icon type="shop" />店铺
+                            </Link>
                         }
                         >
                         <Menu.ItemGroup title="茶">

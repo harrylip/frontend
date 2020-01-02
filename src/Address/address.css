@@ -22,11 +22,31 @@
     height: 150px;
     font-size: 70px;
 }
-.title2{
-    color: black;
-    font-weight:530;
-    font-size: 30px;
-    margin-left: 20%;
-    width: 60%;
-    height: 420px;
+.p{
+    font-size: 20px;
+    text-align: center;
+}
+.form{
+    float: left;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.bu{
+    float: left;
+    margin-left: 16%;
+}
+table{
+    border-collapse :collapse ;
+}
+th,td{
+    width:200px;
+    height:50px;
+    border :1px solid black;
+    font-size:15px;
+    text-align :center;
+}
+.table{
+    float: right;
+    margin-top: 2%;
+    margin-right: 10%;
 }

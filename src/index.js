@@ -19,6 +19,8 @@ import Information from './Information/information'
 import Action from './Action/action'
 import Class from './Class/class'
 import Store from './Store/store'
+import Puer from './Puer/puer'
+import Address from './Address/address'
 import {BrowserRouter,Route, Switch,Redirect,withRouter} from 'react-router-dom';
 
 class IndexPage extends React.Component{
@@ -45,6 +47,8 @@ class IndexPage extends React.Component{
                         <Route path="/action" component={Action}></Route>
                         <Route path="/class" component={Class}></Route>
                         <Route path="/store" component={Store}></Route>
+                        <Route path="/puer" component={Puer}></Route>
+                        <Route path="/address" component={Address}></Route>
                         <Redirect to="login0"></Redirect>
                     </Switch>
                 </BrowserRouter>

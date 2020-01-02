@@ -8,14 +8,13 @@ export default class Contribute extends React.Component{
     render(){
         return(
             <div className={ContributeCss.main}> 
-                <div className={ContributeCss.top}><Icon type="gift"/>Contribute<Link to="/homepage"><Icon type="home" className={ContributeCss.icon}></Icon></Link></div>
-                <div className={ContributeCss.center}>
-                    <img  className={ContributeCss.img1}></img>
-                    <img  className={ContributeCss.img2}></img>
+                <div className={ContributeCss.top}>
+                        <img className={ContributeCss.top2} src="logo.png" width="270px" height="140px"></img>
+                        <img className={ContributeCss.top3} src="ph1.png" width="200px" height="140px"></img>
                 </div>
-                <div className={ContributeCss.bottom}>
-                    <p className={ContributeCss.p}>祝您福如东海      寿比南山</p>  
-                </div>
+                <div className={ContributeCss.mid}>捐赠</div>
+                <img className={ContributeCss.img1} src="weixin.png" width="400px" height="450px"></img>
+                <img className={ContributeCss.img2} src="zhifubao.jpg" width="400px" height="450px"></img>
             </div>
            
         )

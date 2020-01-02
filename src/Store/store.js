@@ -23,7 +23,7 @@ export default class HomePage extends React.Component{
         return(
             <div className={StoreCss.main}>
                 <div className={StoreCss.top}>
-                    <div className={StoreCss.top2}><Icon type="flag" />茶的分类</div>
+                    <div className={StoreCss.top2}><Icon type="shop" />店铺</div>
                 </div>
                 <div className={StoreCss.mid}>
                <Menu className={StoreCss.menu} onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
@@ -48,12 +48,11 @@ export default class HomePage extends React.Component{
                                 <Menu.Item key="setting:6">台湾奶茶</Menu.Item>
                         </Menu.ItemGroup>
                     </SubMenu>
-                    <SubMenu 
+                    <SubMenu disabled
                         title={
-                            <a href="https://unsplash.com/s/photos/tea" target="_blank" rel="noopener noreferrer">
-                            <Icon type="shop" />
-                            商铺
-                            </a>
+                            <Link to="/Store">
+                            <Icon type="shop" />店铺
+                            </Link>
                         }
                         >
                         <Menu.ItemGroup title="茶">
@@ -104,19 +103,49 @@ export default class HomePage extends React.Component{
                 <Tabs defaultActiveKey="1" onChange={callback}>
                     <TabPane tab="茶" key="1">
                         <div className={StoreCss.a1}>
+                            <img src="pr.jpg" width="100%" height="75%"  title="普洱茶"></img>
+                            <div className={StoreCss.p1} >$120</div>
+                            <Link to="/puer" className={StoreCss.p2}>云南普洱茶</Link>
+                        </div>
+                        <div className={StoreCss.a2}>
                             
                         </div>
-                        <div className={StoreCss.a1}>
+                        <div className={StoreCss.a2}>
+                            
+                        </div>
+                        <div className={StoreCss.a2}>
                             
                         </div>
                     </TabPane>
                     <TabPane tab="茶具" key="2">
                         <div className={StoreCss.a1}>
+                            <img src="pr.jpg" width="100%" height="75%"  title="普洱茶"></img>
+                            <div className={StoreCss.p1} >$120</div>
+                            <div className={StoreCss.p2}>云南普洱茶</div>
+                        </div>
+                        <div className={StoreCss.a2}>
+                            
+                        </div>
+                        <div className={StoreCss.a2}>
+                            
+                        </div>
+                        <div className={StoreCss.a2}>
                             
                         </div>
                     </TabPane>
                     <TabPane tab="茶点" key="3">
                         <div className={StoreCss.a1}>
+                            <img src="pr.jpg" width="100%" height="75%"  title="普洱茶"></img>
+                            <div className={StoreCss.p1} >$120</div>
+                            <div className={StoreCss.p2}>云南普洱茶</div>
+                        </div>
+                        <div className={StoreCss.a2}>
+                            
+                        </div>
+                        <div className={StoreCss.a2}>
+                            
+                        </div>
+                        <div className={StoreCss.a2}>
                             
                         </div>
                     </TabPane>

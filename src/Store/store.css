@@ -21,11 +21,28 @@
     width: 90%;
     background-color: blanchedalmond;
 }
-/* .ph{
-    float: left;
-    margin-top: 40px;
-    margin-left: 20%;
-} */
 .a1{
-    height: 410px;
+    float: left;
+    margin-top: 3%;
+    margin-left: 16%;
+    width: 16%;
+    height: 360px;
+    border: 0.5px solid rgb(224, 180, 114);
+    background-color: rgb(224, 194, 149);
+}
+.a2{
+    font-size:100px ;
+    float: left;
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 16%;
+    height: 360px;
+    border: 0.5px solid rgb(224, 180, 114);
+    background-color: rgb(224, 194, 149);
+}
+.p1{
+    font-size: 30px;
+}
+.p2{
+    font-size: 16px;
 }

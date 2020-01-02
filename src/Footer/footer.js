@@ -5,6 +5,16 @@ const { SubMenu } = Menu;
 
 var FooterCss = require('./footer.css')
 export default class Footer extends React.Component{
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+            news: [{
+                poster: ""
+            }]
+        }
+    }
+
     state = {
         current: 'mail',
       };
@@ -15,7 +25,9 @@ export default class Footer extends React.Component{
           current: e.key,
         });
       };
+
     render(){
+
         return(
             <div className={FooterCss.main}>
                 <div className={FooterCss.mid}>
